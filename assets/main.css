@@ -37,23 +37,6 @@ body{
 }
 
 
-/* Header */
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.side_options ul li{
-  list-style: none;
-  text-align: center;
-  display: inline;
-  margin: 0 2rem;
-}
-.logo{
-  width: 130px;
-  height: 50px;
-  background-color: blue;
-}
 /*
 Body
 */
@@ -135,7 +118,7 @@ footer{
 }
  
 .footer-distributed .footer-center p a{
-	color:  #F9DD60;
+	color:  #FAD165;
 	text-decoration: none;;
 }
   
@@ -149,7 +132,7 @@ footer{
  
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #f0a500;
+	color:  #FAD165;
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -157,7 +140,7 @@ footer{
  
 .footer-distributed .footer-icons{
 	text-align: center;
-  color:  #f0a500;
+  color:  #FAD165;
 }
  
 .footer-distributed .footer-icons a{
