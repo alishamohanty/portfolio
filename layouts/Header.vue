@@ -30,7 +30,7 @@
 
   .side_options ul li a{
     text-decoration: none;
-    color: #464545;
+    color: #012E51;
     text-decoration: none;
     letter-spacing: 0.3px;
     display: inline-block;
@@ -51,9 +51,6 @@
     width: 0;
     z-index: -2;
 }
-  .side_options ul li a:hover{
-    color: #012E51;
-  }
   .logo{
     width: 130px;
     height: 50px;
