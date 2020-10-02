@@ -1,8 +1,14 @@
 
 <template>
-  <div class="container content">Hey!</div>
+  <div class="container">
+    
+  </div>
 </template>
 
 <script>
 export default {}
 </script>
+
+<style scoped>
+
+</style>
