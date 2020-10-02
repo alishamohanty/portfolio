@@ -38,7 +38,7 @@ export default {}
     content: "";
     display: block;
     height: 15px;
-    background: #FAD165;
+    background: #fbb946;
     transition:width 0.4s ;
     
     width: 60%;

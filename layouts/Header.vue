@@ -45,7 +45,7 @@
     display: block;
     height: 5px;
     position: absolute;
-    background: #FAD165;
+    background: #fbb946;
     transition:width 0.4s ;
     
     width: 0;

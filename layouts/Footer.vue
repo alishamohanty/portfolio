@@ -89,7 +89,7 @@ footer{
 }
  
 .footer-distributed .footer-center p a{
-	color:  #FAD165;
+	color:  #fbb946;
 	text-decoration: none;;
 }
   
@@ -103,7 +103,7 @@ footer{
  
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #FAD165;
+	color:  #fbb946;
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -111,7 +111,7 @@ footer{
  
 .footer-distributed .footer-icons{
 	text-align: center;
-  color:  #FAD165;
+  color:  #fbb946;
 }
  
 .footer-distributed .footer-icons a{
