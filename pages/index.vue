@@ -1,12 +1,12 @@
 <template>
     <div class="index_page">
-        <div class="div-portrait">
-          <img src="../static/portrait.png" alt="Alisha Mohanty Illustration" class="portrait">
-        </div>
         <div class="index_left_side">
           <div>Hey, I'm</div>
           <div class="Alisha">Alisha!</div>
           <div class="short_message">I am a developer who loves to paint and cook delicious food!</div>
+        </div>
+        <div class="div-portrait">
+          <img src="../static/portrait.png" alt="Alisha Mohanty Illustration" class="portrait">
         </div>
     </div>
 </template>
@@ -35,7 +35,6 @@ export default {}
 .index_page{
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
 }
 .index_left_side{
   margin: 40px auto;
