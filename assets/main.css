@@ -25,24 +25,17 @@
   }
 }
 
-/*Full Body or Content*/
 body{
   justify-content: center;
   position: relative;
 }
 .container {
   min-height: calc(90vh - 200px);
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 50px;
+  padding-left: 50px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto; */
+  margin: 0 auto;
+  width: 90%;
+  font-family: Nunito;  
 }
-.content{
-  
-}
-
-
-/*
-Body
-*/
-

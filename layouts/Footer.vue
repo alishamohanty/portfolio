@@ -2,7 +2,7 @@
     <footer class="footer-distributed">
         <div class="footer-left">
             <p class="footer-company-about">
-            <span>Feel free to say Hi! <a href="#" class="footer-icons"><font-awesome-icon :icon="['fas', 'envelope']"/></a></span>
+            <span>Feel free to say Hi ! <a href="#" class="footer-icons"><font-awesome-icon :icon="['fas', 'envelope']"/></a></span>
             You are magnificient beyond measure, perfect in your own imperfections and wonderfully made.</p>
         </div>
         <div class="footer-right">  
@@ -24,9 +24,7 @@ footer{
 	bottom: 0;
   	justify-content: space-between;
 	height: 200px;
-	clear: both;
-	/* margin-top:-200px; */
-
+	clear: both; 
 }
 
 .footer-distributed{
@@ -35,7 +33,7 @@ footer{
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
+	font: bold 16px Nunito; ;
  
 	padding: 50px 50px;
   	display: flex;
@@ -86,6 +84,7 @@ footer{
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
+	font-family: inherit;
 }
  
 .footer-distributed .footer-center p a{
@@ -99,6 +98,8 @@ footer{
 	font-size: 15px;
 	font-weight: normal;
 	margin: 0;
+	text-align: left;
+	letter-spacing: .6px;
 }
  
 .footer-distributed .footer-company-about span{
@@ -107,6 +108,7 @@ footer{
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 20px;
+	font-family: inherit;
 }
  
 .footer-distributed .footer-icons{
@@ -134,7 +136,7 @@ footer{
 @media (max-width: 880px) {
  
 	.footer-distributed{
-		font: bold 14px sans-serif;
+		font: bold 14px;
 	
 	}
  
@@ -156,14 +158,20 @@ footer{
 @media (max-width: 735px) {
 
 	footer{
-		height: 280px;
+		height: 330px;
 	}
   .footer-distributed{
     display: grid;
-    padding: 40px 30px;
+    padding: 30px 30px;
   }
   .footer-distributed .footer-right {
     margin-bottom: 0;
+  }
+  .footer-distributed .footer-company-about{
+	  text-align: center;
+  }
+  .footer-distributed .footer-icons a{
+	  margin: 0 5px;
   }
 }
 </style>
