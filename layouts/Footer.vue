@@ -1,177 +1,158 @@
 <template>
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <p class="footer-company-about">
-            <span>Feel free to say Hi ! <a href="#" class="footer-icons"><font-awesome-icon :icon="['fas', 'envelope']"/></a></span>
-            You are magnificient beyond measure, perfect in your own imperfections and wonderfully made.</p>
-        </div>
-        <div class="footer-right">  
-            <div class="footer-icons">
-                <a href="#"><font-awesome-icon :icon="['fab', 'medium']"/></a>
-                <a href="#"><font-awesome-icon :icon="['fab', 'twitter']"/></a>
-                <a href="#"><font-awesome-icon :icon="['fab', 'linkedin']"/></a>
-                <a href="#"><font-awesome-icon :icon="['fab', 'github']"/></a>
-            </div>
-            <p class="footer-company-name">Copyright &copy {{ new Date().getFullYear() }} Alisha Mohanty</p>
-        </div>
-    </footer>
+  <footer class="Footer">
+    <section class="inner-footer">
+      <section class="footer-text">
+        <p>
+          <span>
+            Feel free to say Hi !
+            <a href="#" class="footer-icons">
+              <font-awesome-icon :icon="['fas', 'envelope']" />
+            </a>
+            <br />
+          </span>
+        </p>
+        <h4>
+          You are magnificiently beautiful in your own way
+        </h4>
+      </section>
+      <section class="footer-sociallinks">
+        <ul>
+          <li>
+            <a href="#"><font-awesome-icon :icon="['fab', 'medium']"/></a>
+          </li>
+          <li>
+            <a href="#"><font-awesome-icon :icon="['fab', 'twitter']"/></a>
+          </li>
+          <li>
+            <a href="#"><font-awesome-icon :icon="['fab', 'linkedin']"/></a>
+          </li>
+          <li>
+            <a href="#"><font-awesome-icon :icon="['fab', 'github']"/></a>
+          </li>
+        </ul>
+        <p>Copyright &copy; {{ new Date().getFullYear() }} Alisha Mohanty</p>
+      </section>
+    </section>
+  </footer>
 </template>
 
 <style scoped>
-
-footer{
-	position: relative;
-	bottom: 0;
-  	justify-content: space-between;
-	height: 200px;
-	clear: both; 
-}
-
-.footer-distributed{
-	background-color: #012E51;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px Nunito; ;
- 
-	padding: 50px 50px;
-  	display: flex;
-}
- 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
- 
-.footer-distributed .footer-left{
-	width: 50%;
-}
-  
- 
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
-}
- 
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
- 
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
+.Footer {
   text-align: center;
-  letter-spacing: 0.5px;
+  color: #fff;
+  font-family: "Source Serif Pro";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #091336;
 }
- 
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #fafafa;
-	vertical-align: middle;
-	margin:0;
+.Footer .inner-footer .footer-text svg {
+  height: 32px;
+  width: 30px;
+  color: #fbb946;
+  margin-bottom: -10px;
 }
- 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-	font-family: inherit;
+.Footer .inner-footer .footer-text h4 {
+  margin-top: 10px;
+  font-family: "Source Serif Pro";
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 600;
+  color: #dee0e7;
+  font-size: 18px;
 }
- 
-.footer-distributed .footer-center p a{
-	color:  #fbb946;
-	text-decoration: none;;
+.footer-sociallinks p {
+  color: #b3b5b9;
+  font-family: "Source Serif Pro";
+  letter-spacing: 0.8px;
+  margin-top: -6px;
 }
-  
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 15px;
-	font-weight: normal;
-	margin: 0;
-	text-align: left;
-	letter-spacing: .6px;
+.Footer .inner-footer {
+  display: flex;
+  /* background: #091336; */
 }
- 
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #fbb946;
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 20px;
-	font-family: inherit;
+.Footer .inner-footer .footer-text p span {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: #b3b5b9;
+  letter-spacing: 0.4px;
+  font-size: 18px;
 }
- 
-.footer-distributed .footer-icons{
-	text-align: center;
-  color:  #fbb946;
+.Footer .inner-footer .footer-sociallinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 999;
 }
- 
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	border-radius: 2px;
-  	margin: 0 20px;
- 
-	font-size: 30px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
- 
-	margin-right: 3px;
-	margin-bottom: 5px;
+.footer-text {
+  color: aliceblue;
 }
-
-@media (max-width: 880px) {
- 
-	.footer-distributed{
-		font: bold 14px;
-	
-	}
- 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.main {
-		line-height: normal;
-		font-size: auto;
-	}
- 
+.Footer .inner-footer .footer-sociallinks ul li svg {
+  height: 32px;
+  width: 30px;
+  color: #fafafa;
 }
-@media (max-width: 735px) {
-
-	footer{
-		height: 330px;
-	}
-  .footer-distributed{
-    display: grid;
-    padding: 30px 30px;
+.Footer .inner-footer .footer-sociallinks ul li:first-child {
+  margin-left: 0;
+}
+.Footer .inner-footer .footer-text {
+  display: flex;
+  flex-direction: column;
+}
+.Footer .inner-footer .footer-sociallinks ul li {
+  margin-left: 24px;
+  margin-right: 0;
+  width: inherit;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+.Footer .inner-footer .footer-sociallinks ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .inner-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1288px;
+    margin: 0 auto;
   }
-  .footer-distributed .footer-right {
-    margin-bottom: 0;
+  .inner-footer .footer-text {
+    align-items: flex-start;
   }
-  .footer-distributed .footer-company-about{
-	  text-align: center;
+  .inner-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1288px;
+    margin: 0 auto;
   }
-  .footer-distributed .footer-icons a{
-	  margin: 0 5px;
+}
+@media screen and (max-width: 767px) {
+  .footer-text,
+  .inner-footer {
+    align-items: center;
+  }
+  .inner-footer {
+    flex-direction: column;
+    padding: 24px 0;
+  }
+  .footer-text p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .footer-text h4 {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 300px;
+    text-align: center;
   }
 }
 </style>

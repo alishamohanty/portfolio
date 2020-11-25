@@ -27,12 +27,11 @@
 
 body{
   justify-content: center;
-  position: relative;
 }
 .container {
   min-height: calc(90vh - 200px);
-  margin: 0 auto;
-  width: 90%;
+  margin: 0;
+  width: 100%;
   font-family: Nunito;  
   padding-bottom: 40px ;
 }
